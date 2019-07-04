@@ -1,0 +1,11 @@
+
+.crystal {
+    border: 3px; 
+    height: 100px;
+}
+
+.crystals { 
+    display: flex;
+    align-content: center;    
+    border: 2px;
+}
