@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head> 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Crystal Collector</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -16,52 +17,52 @@
         </div>
         
         <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3"></div>
-                        <div class="col-lg-6 how-to-play">
-                            <p>You will be provided with a random number between 19 to 120. There are
+             <div class="row">
+                <div class="col-lg-6 how-to-play">
+                     <p>You will be provided with a random number between 19 to 120. There are
                                 4 crystals below (each with different values) that you must click and 
                                 add up to the random number provided. If you achieve that number, you 
                                 win, otherwise you lose. Everytime the game starts, the value of the 
                                 crystals and the random number changes. Good luck! </p> 
-                        </div>
-                        <div class="col-lg-3"></div>
-                    </div>
+                </div>
                     <br>
-                    <div class="row">
-                        <div class="col-lg-6 randomNumber">Random Number: </div>
-                        <div class = "col-lg-1"></div>
-                        <div class="col-lg-2 totalWL">
-                            <div class="row wins">Number of Wins:</div>
-                            <div class="row losses">Number of Losses: </div>
-                        </div>
+            <div class="row">
+                <div class="col-lg-6">
+                <h2>Random Number: </h2>    
+                </div>
+                
+                </div>
+                    
+            <div class="row"> 
+                    <div class="col-lg-3">
+                        <img id="crystal1" src="assets/images/crystal1.jpg">
                     </div>
-                    <br>
-                    <div class="row"> 
-                        <div class="col-lg-3 gems">
-                            <div id="img1"></div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div id="img2"></div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div id="img3"></div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div id="img4"></div>
-                        </div>
+                    <div class="col-lg-3">
+                        <img id="crystal2" src="assets/images/crystal2.jpg">
                     </div>
-                    <br>
-                    <div class="row"> 
-                        <div class="col-lg-6 totalScore">Total score</div>
+                    <div class="col-lg-3">
+                        <img id="crystal3" src="assets/images/crystal3.jpg">
                     </div>
-                    <br>
-                    <div class="row"> 
-                        <div class="col-lg-6 scoreDisplay">Your Score</div>
+                    <div class="col-lg-3">
+                        <img id="crystal4" src="assets/images/crystal4.jpg">
+                    </div>
+                </div>
+                
+            <div class="row"> 
+                    <div class="col-lg-6 ">Total score:</div>
+                    </div>
+                <div class="col-lg-2">
+                    <div class="row wins">Number of Wins:</div>
+                    <div class="row losses">Number of Losses: </div>
+                </div>
+                <div class="row"> 
+                        <div class="col-lg-6 ">Your Score:</div>
                     </div>
             </div>
 
     <script type="text/javascript" scr="assets/javascript/game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </body>
 
 

@@ -1,11 +1,35 @@
-
-.crystal {
-    border: 3px; 
-    height: 100px;
+.header {
+    text-align: center;
+    color: mediumblue;
 }
-
 .crystals { 
     display: flex;
     align-content: center;    
     border: 2px;
 }
+
+.container {
+    margin: 50px;
+    text-align: center;
+}
+.col {
+    margin: 1px;
+
+}
+
+.img {
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+}
+ h2{ 
+     text-align: left;
+    margin-left: 50px;
+ }
+ body {
+     background-color: lightblue;
+     background-blend-mode: darken;
+ }
+ .row {
+     margin-left: 15px;
+ }
