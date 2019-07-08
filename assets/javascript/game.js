@@ -2,15 +2,18 @@ $(document).ready(function() {
 
 	var randomNumber;
 	var totalScore = 0
-	console.log("Total score" + totalScore);
 	var wins = 0;
-	console.log("Number of wins:" + wins);
 	var losses = 0;
-	console.log("Number of losses:" + losses);
 	var crystal1;
 	var crystal2;
 	var crystal3;
 	var crystal4;
+
+	console.log("Total score" + totalScore);
+	console.log("Number of wins:" + wins);
+	console.log("Number of losses:" + losses);
+
+
 
 
 	randomNumber = Math.floor(Math.random() * 101)+19;
@@ -20,41 +23,14 @@ $(document).ready(function() {
 	$("#results").html('Random Result: ' + results);
 
 
-	var crystal1 = Math.floor(Math.random() * 11) + 1; 
-		console.log("Crystal 1: " + crystal1); 
-		$("#img1").html("assets/images/crystal1" + " value=" + crystal1); 
-
-	var crystal2 = Math.floor(Math.random() * 11) + 1; 
-		console.log("Crystal 2: " + crystal2); 
-		$("#img2").html("assets/images/crystal2" + " value=" + crystal2); 
-
-	var crystal3 = Math.floor(Math.random() * 11) + 1; 
-		console.log("Crystal 3: " + crystal3); 
-		$("#img3").html("assets/images/crystal3" + " value=" + crystal3);
+$('.images').each(functon() {
+	var num = Math.floor(Math.random()*11)+1,
+	img = $(this);
 	
-	var crystal4 = Math.floor(Math.random() * 11) + 1; 
-		console.log("Crystal 4: " + crystal4); 
-		$("#img4").html("assets/images/crystal4" + " value=" + crystal4s);
+	img.attr('src', 'pictures/number' + num +'.jpg');
+	img.attr('alt', 'src: '+ img.attr('src'));
 
-
-
-	for(var i =0; i<4; i++){
-    	var random = Math.floor(Math.random() * 11)+1;
-    	console.log(random);
-
-    	var crystal = $("div");
-    	crystal.attr("class","crystal");
-    	$(".crystals").append(crystal);
-	}
-
-	$(".crystal").on('click',function () {
-   	 	var results;
-    	var num = $(this).attr('data-random');
-    	result += num;
-    	console.log(result);
-
-	}
-
+})
 
 
 
